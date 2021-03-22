@@ -1321,6 +1321,7 @@ define(["./raphael.core"], function (R) {
     //these are custom additons to make a single
     //group around all the elements
     var g = $("g");
+    $(g, { xmlns: "http://www.w3.org/2000/svg", "xmlns:xlink": "http://www.w3.org/1999/xlink" });
     cnvs.appendChild(g);
     cnvs = g;
     g.style && (g.style.webkitTapHighlightColor = "rgba(0,0,0,0)");
